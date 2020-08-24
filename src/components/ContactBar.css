@@ -1,0 +1,30 @@
+.contact-bar {
+	/* border: thin solid white; */
+	text-decoration: none;
+	position: fixed;
+	height: fit-content;
+	letter-spacing: .5ch;
+	font-size: 12px;
+	font-family: 'Fira Code', monospace;
+	writing-mode: vertical-rl;
+	bottom: 0;
+	right: 5vw;
+	/* margin: 20px auto; */
+	transition: .2s ease-in;
+}
+
+.contact-bar::after {
+	content: "";
+	display: inline-block;
+	bottom: 0;
+	/* position: absolute; */
+	width: 1px;
+	height: 90px;
+	background: #fff;
+	margin: 0px auto;
+}
+
+.contact-bar:hover {
+	color: #00e5ff;
+	transform: translateY(-3px);
+}

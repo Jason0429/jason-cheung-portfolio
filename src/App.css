@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+	--section-padding-top: 100px;
+	--section-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+	height: 200vh;
+	width: 100%;
+	background: #2f3132;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar {
+	width: 8px;
+	background: #2f3132;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-thumb {
+	background: #eee;
+	border-radius: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+	position: relative;
+	padding: 80px 20vw;
+	height: 100vh;
+	/* border: thin solid white; */
 }
+
+/* .sm-icon {
+	font-size: 1.5em;
+	transform: translateY(2px);
+} */
+
+/* Main Intro */
+/* section {
+	height: var(--section-height);
+	padding-top: var(--section-padding-top);
+} */
+
+/* .main-intro {
+	padding-top: 0;
+	background: url('img/matte-black.jpg');
+}
+
+.main-intro img {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	object-fit: cover;
+}
+
+.main-intro::before {
+	z-index: 1;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(to top, #111, transparent);
+} */
