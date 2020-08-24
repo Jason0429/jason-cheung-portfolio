@@ -4,6 +4,7 @@ import Projects from './components/Projects';
 import SocialMediaBar from './components/SocialMediaBar';
 import ContactBar from './components/ContactBar';
 import IntroSection from './components/IntroSection';
+import AboutSection from './components/AboutSection';
 
 import './App.css';
 
@@ -12,6 +13,7 @@ function App() {
 		<div>
 			<Navbar />
 			<IntroSection />
+			<AboutSection />
 			<Projects />
 
 			<SocialMediaBar />

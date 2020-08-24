@@ -45,10 +45,8 @@ nav a {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-}
-
-.nav-links a {
-	margin: 0 20px;
+	counter-reset: link;
+	/* counter-set: -1; */
 }
 
 .resume-btn {
@@ -64,7 +62,18 @@ nav a {
 }
 
 .nav-link {
+	margin: 0 20px;
 	position: relative;
+	color: #aaa;
+	transition: .1s ease-in;
+}
+
+.nav-link:hover {
+	color: #fff;
+}
+
+.nav-link:hover::before {
+	color: #00e5ff;
 }
 
 .nav-link::after {
@@ -76,6 +85,15 @@ nav a {
 	width: 0%;
 	left: 0;
 	transition: width .2s ease-in;
+}
+
+.nav-link::before {
+	counter-increment: link;
+	content: "0" counter(link) ". ";
+	font-family: 'Fira Code', monospace;
+	text-align: right;
+	color: #00e5ff50;
+	transition: color .2s ease-in;
 }
 
 .nav-link:hover::after {

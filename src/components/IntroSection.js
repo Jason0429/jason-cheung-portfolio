@@ -7,7 +7,7 @@ function IntroSection() {
 			<div className="text-wrapper">
 				<div className="hello">Hi, my name is</div>
 				<div className="name">Jason Cheung</div>
-				<div className="occupation">I learn. I build. {/* &lt; / &gt;*/} </div>
+				<div className="occupation">I learn. I create. </div>
 
 				<a href="mailto:jasoncheung0429@gmail.com" className="say-hi-btn">
 					Say Hi

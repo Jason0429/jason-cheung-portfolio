@@ -1,11 +1,9 @@
 import React from 'react';
 import './Navbar.css';
 import JcLogoPoint from './icons/jcLogoPoint.js';
-import JcLogoFull from './icons/jcLogoFull.js';
+import styled from 'styled-components';
 
 function Navbar() {
-	var isMouseOver;
-
 	return (
 		<nav>
 			<a href="" className="logo">
