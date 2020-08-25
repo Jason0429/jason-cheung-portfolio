@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/jason-cheung-portfolio/build/static/css/main.2744df97.chunk.css",
-    "main.js": "/jason-cheung-portfolio/build/static/js/main.9fc5e1c5.chunk.js",
-    "main.js.map": "/jason-cheung-portfolio/build/static/js/main.9fc5e1c5.chunk.js.map",
-    "runtime-main.js": "/jason-cheung-portfolio/build/static/js/runtime-main.17970201.js",
-    "runtime-main.js.map": "/jason-cheung-portfolio/build/static/js/runtime-main.17970201.js.map",
-    "static/js/2.793b5ae0.chunk.js": "/jason-cheung-portfolio/build/static/js/2.793b5ae0.chunk.js",
-    "static/js/2.793b5ae0.chunk.js.map": "/jason-cheung-portfolio/build/static/js/2.793b5ae0.chunk.js.map",
-    "index.html": "/jason-cheung-portfolio/build/index.html",
-    "precache-manifest.98a7d1fdd30ba9d02d32f4f27b2e1480.js": "/jason-cheung-portfolio/build/precache-manifest.98a7d1fdd30ba9d02d32f4f27b2e1480.js",
-    "service-worker.js": "/jason-cheung-portfolio/build/service-worker.js",
-    "static/css/main.2744df97.chunk.css.map": "/jason-cheung-portfolio/build/static/css/main.2744df97.chunk.css.map",
-    "static/js/2.793b5ae0.chunk.js.LICENSE.txt": "/jason-cheung-portfolio/build/static/js/2.793b5ae0.chunk.js.LICENSE.txt",
-    "static/media/profile-pic-2.png": "/jason-cheung-portfolio/build/static/media/profile-pic-2.a378fb07.png"
+    "main.css": "/jason-cheung-portfolio/public/static/css/main.2744df97.chunk.css",
+    "main.js": "/jason-cheung-portfolio/public/static/js/main.618a356c.chunk.js",
+    "main.js.map": "/jason-cheung-portfolio/public/static/js/main.618a356c.chunk.js.map",
+    "runtime-main.js": "/jason-cheung-portfolio/public/static/js/runtime-main.439fa5cc.js",
+    "runtime-main.js.map": "/jason-cheung-portfolio/public/static/js/runtime-main.439fa5cc.js.map",
+    "static/js/2.793b5ae0.chunk.js": "/jason-cheung-portfolio/public/static/js/2.793b5ae0.chunk.js",
+    "static/js/2.793b5ae0.chunk.js.map": "/jason-cheung-portfolio/public/static/js/2.793b5ae0.chunk.js.map",
+    "index.html": "/jason-cheung-portfolio/public/index.html",
+    "precache-manifest.8e5c7e92dd82197971ed11020d6f2b28.js": "/jason-cheung-portfolio/public/precache-manifest.8e5c7e92dd82197971ed11020d6f2b28.js",
+    "service-worker.js": "/jason-cheung-portfolio/public/service-worker.js",
+    "static/css/main.2744df97.chunk.css.map": "/jason-cheung-portfolio/public/static/css/main.2744df97.chunk.css.map",
+    "static/js/2.793b5ae0.chunk.js.LICENSE.txt": "/jason-cheung-portfolio/public/static/js/2.793b5ae0.chunk.js.LICENSE.txt",
+    "static/media/profile-pic-2.png": "/jason-cheung-portfolio/public/static/media/profile-pic-2.a378fb07.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.17970201.js",
+    "static/js/runtime-main.439fa5cc.js",
     "static/js/2.793b5ae0.chunk.js",
     "static/css/main.2744df97.chunk.css",
-    "static/js/main.9fc5e1c5.chunk.js"
+    "static/js/main.618a356c.chunk.js"
   ]
 }
