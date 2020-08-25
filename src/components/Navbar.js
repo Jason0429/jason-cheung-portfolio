@@ -1,28 +1,29 @@
 import React from 'react';
-import './Navbar.css';
+import './Navbar.scss';
 import JcLogoPoint from './icons/jcLogoPoint.js';
 import styled from 'styled-components';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Navbar() {
 	return (
 		<nav>
-			<a href="" className="logo">
+			<AnchorLink href="#intro-section" className="logo">
 				<JcLogoPoint />
-			</a>
+			</AnchorLink>
 
 			<div className="nav-links">
-				<a href="" className="nav-link">
+				<AnchorLink href="#about-section" className="nav-link">
 					About
-				</a>
-				<a href="" className="nav-link">
+				</AnchorLink>
+				<AnchorLink href="#experience-section" className="nav-link">
 					Experience
-				</a>
-				<a href="" className="nav-link">
+				</AnchorLink>
+				<AnchorLink href="#projects-section" className="nav-link">
 					Projects
-				</a>
-				<a href="" className="nav-link">
+				</AnchorLink>
+				<AnchorLink href="#contact-section" className="nav-link">
 					Contact
-				</a>
+				</AnchorLink>
 				<a href="" className="resume-btn">
 					Resume
 				</a>

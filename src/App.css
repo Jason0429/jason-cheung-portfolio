@@ -17,7 +17,8 @@
 #root {
 	/* height: 200vh; */
 	width: 100%;
-	background: #2f3132;
+	/* background: #2f3132; */
+	background: #212121;
 }
 
 ::-webkit-scrollbar {
@@ -38,6 +39,30 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	/* border: thin solid white; */
+}
+
+.title {
+	font-weight: 600;
+	padding: 20px 0;
+	font-size: 1.5em;
+	counter-reset: link;
+	position: relative;
+}
+
+.title::before {
+	counter-increment: link;
+	content: '0' counter(link) '. ';
+	color: #00e5ff;
+}
+
+.title::after {
+	content: '';
+	background: #fff;
+	display: block;
+	height: 1px;
+	position: relative;
+	margin: 10px 0;
+	max-width: 30ch;
 }
 
 /* .sm-icon {

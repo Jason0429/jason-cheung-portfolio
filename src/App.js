@@ -1,11 +1,12 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import Projects from './components/Projects';
+import ProjectsSection from './components/ProjectsSection';
 import SocialMediaBar from './components/SocialMediaBar';
 import ContactBar from './components/ContactBar';
 import IntroSection from './components/IntroSection';
 import AboutSection from './components/AboutSection';
-
+import ExperienceSection from './components/ExperienceSection';
+import ContactSection from './components/ContactSection';
 import './App.css';
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
 			<Navbar />
 			<IntroSection />
 			<AboutSection />
-			<Projects />
-
+			<ExperienceSection />
+			<ProjectsSection />
+			<ContactSection />
 			<SocialMediaBar />
 			<ContactBar />
 		</div>

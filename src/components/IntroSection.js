@@ -1,13 +1,13 @@
 import React from 'react';
-import './IntroSection.css';
+import './IntroSection.scss';
 
 function IntroSection() {
 	return (
-		<section className="intro-section">
+		<section className="intro-section" id="intro-section">
 			<div className="text-wrapper">
 				<div className="hello">Hi, my name is</div>
 				<div className="name">Jason Cheung</div>
-				<div className="occupation">I learn. I create. </div>
+				<div className="occupation">I learn stuff. I make stuff. </div>
 
 				<a href="mailto:jasoncheung0429@gmail.com" className="say-hi-btn">
 					Say Hi

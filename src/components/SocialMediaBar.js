@@ -16,12 +16,12 @@ function SocialMediaBar() {
 			</li>
 			<li>
 				<a href="">
-					<IconLinkedin className="social-media-icon" />
+					<IconLinkedin className="social-media-icon" id="linkedin" />
 				</a>
 			</li>
 			<li>
 				<a href="">
-					<IconInstagram className="social-media-icon" />
+					<IconInstagram className="social-media-icon" id="instagram" />
 				</a>
 			</li>
 			<li>

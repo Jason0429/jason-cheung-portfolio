@@ -1,0 +1,100 @@
+nav {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	color: #fff;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5vw;
+	/* background: #2f3132; */
+	background: #212121;
+	box-shadow: 0 0 10px 3px #00000020;
+
+	.logo svg {
+		/* border: 2px solid transparent;
+		border-radius: 50%; */
+		height: 50px;
+		width: 50px;
+		transition: .2s ease-in;
+
+		&:hover {
+			border: 2px solid #00e5ff;
+			border-radius: 50%;
+		}
+
+		&:hover #hex {
+			opacity: 0;
+			transition: .2s ease-in;
+		}
+
+		#hex {
+			opacity: 1;
+			transition: .2s ease-in;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.nav-links {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		counter-reset: link;
+
+		.nav-link {
+			margin: 0 20px;
+			position: relative;
+			color: #ccc;
+			transition: .1s ease-in;
+
+			&:hover {
+				color: #fff;
+			}
+
+			&:hover::before {
+				color: #00e5ff;
+			}
+
+			&::before {
+				counter-increment: link;
+				content: "0" counter(link) ". ";
+				font-family: 'Fira Code', monospace;
+				text-align: right;
+				color: #00e5ff80;
+				transition: color .2s ease-in;
+			}
+		}
+	}
+
+	.resume-btn {
+		color: #00e5ff;
+		border: 2px solid #00e5ff;
+		padding: 10px;
+
+		transition: .1s ease-in;
+		&:hover {
+			background: #00e5ff20;
+		}
+	}
+}
+
+.nav-link::after {
+	content: '';
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	bottom: -5px;
+	width: 0%;
+	left: 0;
+	transition: width .2s ease-in;
+}
+
+.nav-link:hover::after {
+	width: 100%;
+}
