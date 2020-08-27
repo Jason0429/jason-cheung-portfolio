@@ -24,7 +24,10 @@ function Navbar() {
 				<AnchorLink href="#contact-section" className="nav-link">
 					Contact
 				</AnchorLink>
-				<a href="Jason0429.github/io/jason-cheung-portfolio/resume.pdf" target="_blank " className="resume-btn">
+				<a
+					href="Jason0429.github/io/jason-cheung-portfolio/folder/resume.pdf"
+					target="_blank "
+					className="resume-btn">
 					Resume
 				</a>
 			</div>
