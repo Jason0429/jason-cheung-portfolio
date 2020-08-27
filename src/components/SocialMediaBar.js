@@ -10,28 +10,28 @@ function SocialMediaBar() {
 	return (
 		<ul className="social-media-bar">
 			<li>
-				<a href="">
-					<IconGitHub className="social-media-icon" />
+				<a href="https://github.com/Jason0429" target="_blank">
+					<IconGitHub className="social-media-icon" id="github" />
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="https://www.linkedin.com/in/jason-cheung-27b8751a0/" target="_blank">
 					<IconLinkedin className="social-media-icon" id="linkedin" />
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="https://www.instagram.com/j.aysian/" target="_blank">
 					<IconInstagram className="social-media-icon" id="instagram" />
 				</a>
 			</li>
 			<li>
-				<a href="">
-					<IconFacebook className="social-media-icon" />
+				<a href="https://www.facebook.com/jason.cheung.961556/" target="_blank">
+					<IconFacebook className="social-media-icon" id="facebook" />
 				</a>
 			</li>
 			<li>
-				<a href="">
-					<IconTwitter className="social-media-icon" />
+				<a href="" target="_blank">
+					<IconTwitter className="social-media-icon" id="twitter" />
 				</a>
 			</li>
 		</ul>

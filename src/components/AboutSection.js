@@ -11,17 +11,19 @@ function AboutSection() {
 					<p className="desc">Hi, my name is Jason! I am based in Queens, New York.</p>
 					<br />
 					<p className="desc">
-						I started learning web development in junior year of high school. I wanted to explore outside of
-						my 45-minute class so I participated in a UX/UI Design bootcamp, Data Science course, and
-						solving coding questions.
+						I started learning web development in my junior year of high school. I wanted to explore outside
+						of my 45-minute class so I watched youtube, joined a UX Design bootcamp, participated in a Data
+						Science course, and practiced solving coding questions.
 					</p>
 					<br />
 					<p className="desc">
-						I have loved every step of the way and I hope to gain new experiences and meet bright minds.
+						I have loved every step of the way and I hope to gain new experiences and meet amazing people.
 					</p>
+					<br />
+					<p className="desc">I enjoy Chinese dragon boat, lion dance, and biking.</p>
 					<ul className="languages">
 						<li>HTML5</li>
-
+						<li>jQuery</li>
 						<li>JavaScript (ES6+)</li>
 						<li>S(CSS)</li>
 						<li>React.js</li>

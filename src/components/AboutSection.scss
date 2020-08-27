@@ -1,8 +1,4 @@
 .about-section {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
 	.wrapper {
 		max-width: 1000px;
 		width: 100%;
@@ -63,16 +59,14 @@
 				top: 20px;
 				left: 20px;
 				border: 2px solid #00e5ff;
-				box-shadow: 0 0 20px 10px #00e5ff20;
+				box-shadow: 0 0 10px 5px #00e5ff20;
 				transition: .1s ease-in;
 			}
 
 			&:hover::before {
 				transform: translate(-10px, -10px);
-			}
-
-			&:hover .profile-pic {
-				box-shadow: 20px 20px 10px 3px #00e5ff10;
+				box-shadow: 0 0 15px 5px #00e5ff50;
+				transition: .1s ease-in;
 			}
 
 			a {

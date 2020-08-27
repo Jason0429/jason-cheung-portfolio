@@ -7,7 +7,7 @@ import IntroSection from './components/IntroSection';
 import AboutSection from './components/AboutSection';
 import ExperienceSection from './components/ExperienceSection';
 import ContactSection from './components/ContactSection';
-import './App.css';
+import './App.scss';
 
 function App() {
 	return (
