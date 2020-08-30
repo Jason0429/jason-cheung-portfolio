@@ -1,48 +1,76 @@
 .intro-section {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	/* border: thin solid white; */
-
-	.text-wrapper {
+	.wrapper {
+		position: relative;
+		border-radius: 10px;
 		width: 100%;
-		height: 100%;
+		height: calc(100vh - 200px);
+		background: url('../img/intro.JPG'), #212121dd;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		// padding: 0 10vw;
+		background-blend-mode: multiply;
+		// box-shadow: inset 0 0 10vw #212121;
+		// &::after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	// background: #21212150;
+		// }
 
-		.hello {
-			font-family: "Fira Code", monospace;
-			color: #00e5ff;
-			font-size: 1.5em;
-		}
+		.text-wrapper {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-left: 10vw;
 
-		.name {
-			font-weight: 900;
-			font-size: 4em;
-			padding: 10px 0;
-		}
+			.hello {
+				font-family: "Fira Code";
+				font-weight: 100;
+				width: fit-content;
+				// padding: 10px 20px;
+				// background: #212121;
+				color: #00e5ff;
+				// color: #212121;
+				font-size: 1em;
+			}
 
-		.occupation {
-			font-size: 2em;
-			font-weight: 600;
-			color: #aaa;
-		}
+			.name {
+				font-weight: 900;
+				font-size: 4em;
+				padding: 10px 0;
+			}
 
-		.say-hi-btn {
-			width: fit-content;
-			margin-top: 50px;
-			padding: 20px 30px;
-			border: 2px solid #00e5ff;
-			color: #00e5ff;
-			text-decoration: none;
-			font-weight: 600;
-			transition: .1s ease-in;
+			.occupation {
+				font-size: 2em;
+				font-weight: 600;
+				// color: #aaa;
+				color: #888;
+			}
 
-			&:hover {
-				background: #00e5ff20;
+			.say-hi-btn {
+				width: fit-content;
+				margin-top: 50px;
+				padding: 20px 30px;
+				// border: 5px solid #00e5ff;
+				// border: 4px solid #212121;
+				background: #212121;
+				color: #00e5ff;
+				// color: #fff;
+				text-decoration: none;
+				font-weight: 600;
+				transition: .1s ease-in;
+
+				&:hover {
+					background: #21212180;
+					// color: #212121;
+				}
 			}
 		}
 	}

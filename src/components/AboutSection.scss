@@ -1,85 +1,111 @@
 .about-section {
 	.wrapper {
-		max-width: 1000px;
 		width: 100%;
-		height: fit-content;
+		height: 100%;
+		gap: 15px;
 		display: flex;
 		flex: 1;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
 
-		.left {
-			width: fit-content;
+		.grid-item {
+			background: #2f3132;
+			border-radius: 5px;
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+
+			svg {
+				height: 3em;
+				width: 3em;
+				stroke: #00e5ff;
+			}
+
+			.game {
+				fill: #00e5ff;
+			}
+
+			.name {
+				font-weight: 600;
+				margin-top: 20px;
+				font-size: 1.5em;
+			}
+		}
+
+		.about {
+			display: flex;
+			padding: 50px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			flex: 0.6;
 
 			.desc {
 				max-width: 45ch;
 				line-height: 1.5;
-				color: #aaa;
+				color: #ccc;
 				font-size: 1em;
 				font-weight: 600;
 				word-spacing: 3px;
 			}
+		}
 
-			.languages {
-				padding: 30px 0;
-				display: grid;
-				grid-template-columns: auto auto;
+		.coding {
+			flex: 0.2;
+			flex-direction: column;
+			justify-content: center;
+		}
 
-				li {
-					list-style-type: none;
+		.col {
+			flex: 0.2;
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+		}
+
+		.languages {
+			padding: 30px 0;
+			display: grid;
+
+			li {
+				margin: 5px 0;
+				list-style-type: none;
+				position: relative;
+				// font-family: "Fira Code", monospace;
+				color: #ccc;
+				font-weight: 100;
+				font-size: 0.9em;
+
+				&::before {
+					content: "▹ ";
 					position: relative;
-					font-family: "Fira Code", monospace;
-					font-weight: 100;
-					font-size: 0.9em;
-
-					&::before {
-						content: "▹ ";
-						position: relative;
-						left: 0px;
-						color: #00e5ff;
-					}
+					left: 0px;
+					color: #00e5ff;
 				}
 			}
 		}
+	}
+}
 
-		.right {
-			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex: 0.3;
+@media only screen and (max-width: 1024px) {
+	.about-section {
+		.wrapper {
+			// display: flex;
+			flex-direction: column;
 
-			&::before {
-				content: '';
-				height: 100%;
-				width: 100%;
-				position: absolute;
-				top: 20px;
-				left: 20px;
-				border: 2px solid #00e5ff;
-				box-shadow: 0 0 10px 5px #00e5ff20;
-				transition: .1s ease-in;
+			.grid-item.coding ul {
+				width: 80%;
+				grid-template-columns: auto auto auto;
+				justify-content: space-between;
 			}
 
-			&:hover::before {
-				transform: translate(-10px, -10px);
-				box-shadow: 0 0 15px 5px #00e5ff50;
-				transition: .1s ease-in;
-			}
+			.col {
+				display: flex;
+				flex-direction: row;
+				gap: 15px;
 
-			a {
-				position: relative;
-				width: 100%;
-				height: 100%;
-				cursor: pointer;
-
-				#profile-pic {
-					width: 100%;
-					height: 100%;
-					object-position: center center;
-					object-fit: cover;
+				.grid-item {
+					flex: 0.5;
 				}
 			}
 		}

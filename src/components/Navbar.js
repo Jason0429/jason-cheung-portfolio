@@ -1,14 +1,17 @@
 import React from 'react';
-import './Navbar.scss';
-import JcLogoPoint from './icons/jcLogoPoint.js';
-import styled from 'styled-components';
+// import './Navbar.scss'; Moved to App.js
+// import JcLogoPoint from './icons/jcLogoPoint.js';
+// import JcLogoBlack from './icons/jcLogoBlack.js';
+import JcLogoBlack from './icons/jcLogoBlack';
+// import styled from 'styled-components';
+// import { ImCross } from 'react-icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-function Navbar() {
+function Navbar({ toggleMenu }) {
 	return (
 		<nav>
 			<AnchorLink href="#intro-section" className="logo">
-				<JcLogoPoint />
+				{JcLogoBlack}
 			</AnchorLink>
 
 			<div className="nav-links">
@@ -24,12 +27,20 @@ function Navbar() {
 				<AnchorLink href="#contact-section" className="nav-link">
 					Contact
 				</AnchorLink>
-				<a
+				{/* <a
 					href="Jason0429.github/io/jason-cheung-portfolio/folder/resume.pdf"
 					target="_blank "
 					className="resume-btn">
 					Resume
-				</a>
+				</a> */}
+
+				<div className="hamburger" onClick={toggleMenu}>
+					<div className="line1 line" />
+					<div className="line2 line" />
+					<div className="line3 line" />
+				</div>
+				{/* <BsFillGrid3X3GapFill className="social-grid nav-link" onClick={toggleMenu} />
+				<TiDelete className="exit-grid nav-link" onClick={toggleMenu} /> */}
 			</div>
 		</nav>
 	);

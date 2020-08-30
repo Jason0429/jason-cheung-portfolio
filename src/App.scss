@@ -17,6 +17,7 @@
 #root {
 	/* height: 200vh; */
 	width: 100%;
+	// overflow-x: hidden;
 	/* background: #2f3132; */
 	background: #212121;
 	counter-reset: section;
@@ -25,21 +26,26 @@
 ::-webkit-scrollbar {
 	width: 8px;
 	background: #212121;
+	// background: #eee;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #ffffff50;
+	// background: #212121;
+	background: #fff;
 	border-radius: 30px;
 }
 
 section {
 	position: relative;
-	padding: 0 25vw;
-	height: 100vh;
+	padding: 100px 10vw;
+	width: 100%;
+	min-height: 100vh;
 	display: flex;
-	// flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	// background: #2f3132;
+	background: #212121;
+	// justify-content: center;
+	// border: thin solid white;
 }
 
 .title {
