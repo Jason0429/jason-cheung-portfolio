@@ -15,8 +15,7 @@ function AboutSection() {
 		'WordPress',
 		'Python',
 		'Github',
-		'Google Colab',
-		'Visual Studio Code'
+		'Google Colab'
 	];
 
 	const designs = [ 'Figma', 'inVision', 'Whimsical' ];

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import experiences from '../data/experiences';
 import './ExperienceSection.scss';
+import DownArrow from './icons/downArrow';
 
 function ExperienceSection() {
 	var clicks = 0;
@@ -36,6 +37,7 @@ function ExperienceSection() {
 		let tabIndicator = document.querySelector('.tab-indicator');
 		let activeTabs = document.querySelector('.tab.active');
 		let allTabs = document.querySelectorAll('.tab');
+
 		// removes active class
 		activeTabs.classList.remove('active');
 		// adds class to selected tab
@@ -44,18 +46,12 @@ function ExperienceSection() {
 		// Tab Indicator Animation
 		for (var i = 0; i < allTabs.length; i++) {
 			if (allTabs[i].classList.contains('active')) {
-				if (window.innerWidth > 1024) {
-					return (tabIndicator.style.top = `calc(calc(100%/${experiences.length})*${i})`);
-				} else {
-					return (tabIndicator.style.left = `calc(calc(100%/${experiences.length})*${i})`);
-				}
+				// tabIndicator.style.top = `calc(calc(100%/${experiences.length})*${i})`;
+				let distance = 50 * i;
+				tabIndicator.style.top = distance + 'px';
 			}
 		}
 	}
-
-	const heightOrWidth = `calc(100%/${experiences.length})`;
-
-	// Change tab-ind length when screen resizes
 
 	return (
 		<section className="experience-section" id="experience-section">
@@ -65,12 +61,22 @@ function ExperienceSection() {
 					<ul className="tab-slider">
 						<div className="tab-indicator" style={{ height: `calc(100%/${experiences.length})` }} />
 						{experiences.map((exp) => (
-							<li
-								className={exp.id === currentTab.id ? 'tab active' : 'tab'}
-								id={exp.id}
-								onClick={changeCard}>
-								{exp.displayTitle}
-							</li>
+							<div>
+								<li
+									className={exp.id === currentTab.id ? 'tab active' : 'tab'}
+									id={exp.id}
+									onClick={changeCard}>
+									{exp.displayTitle}
+									{DownArrow}
+								</li>
+								<div className="info">
+									<div className="card">
+										{/* <div className="info-title">{currentTab.title}</div> */}
+										<div className="duration">{currentTab.duration}</div>
+										<div className="desc">{currentTab.desc}</div>
+									</div>
+								</div>
+							</div>
 						))}
 					</ul>
 					<div className="info">

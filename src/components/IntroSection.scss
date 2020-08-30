@@ -75,3 +75,29 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	.intro-section {
+		padding: 0;
+		.wrapper {
+			height: 100vh;
+			.text-wrapper {
+				.hello {
+					font-size: 1em;
+				}
+
+				.name {
+					font-size: 2.5em;
+				}
+
+				.occupation {
+					font-size: 1.5em;
+				}
+
+				.say-hi-btn {
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
+}

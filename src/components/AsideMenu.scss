@@ -1,0 +1,146 @@
+.aside-menu {
+	position: fixed;
+	z-index: 99;
+	height: calc(100vh - 100px);
+	top: 100px;
+	width: fit-content;
+	// border: thin solid white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	right: -5vw;
+	transition: .3s ease-out;
+
+	&::before,
+	&::after {
+		content: '';
+		background: #fff;
+		height: 80%;
+		width: 1px;
+		// z-index: 100;
+	}
+
+	&.active {
+		right: 5vw;
+	}
+
+	// No nav-links in full screen
+	.links {
+		display: none !important;
+	}
+
+	.social-media {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		list-style-type: none;
+
+		svg {
+			width: 1.2em;
+			height: 1.2em;
+			margin: 1em 0em;
+			fill: #fff;
+			transition: .2s ease-in;
+
+			&:hover {
+				fill: #00e5ff;
+				transform: translateY(-2px);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.aside-menu {
+		position: fixed;
+		z-index: 99;
+		height: calc(100vh - 100px);
+		width: 100vw;
+		top: -100vh;
+		background: #212121;
+		transition: .3s ease-out;
+
+		&::before,
+		&::after {
+			display: none;
+		}
+
+		&.active {
+			top: 100px;
+			right: 0; // Imoprtant to keep it full width
+		}
+
+		.links {
+			display: flex !important;
+			position: relative;
+			left: 0;
+			width: 100vw;
+			height: 80%;
+			// border: thin solid #111;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			counter-reset: link;
+
+			.nav-link-aside {
+				width: 100%;
+				text-align: center;
+				padding: 2em;
+				text-decoration: none;
+
+				&::before {
+					counter-increment: link;
+					content: "0" counter(link) ".";
+					font-family: 'Fira Code', monospace;
+					text-align: right;
+					color: #00e5ff;
+					transition: color .2s ease-in;
+				}
+
+				&:hover {
+					background: #ffffff10;
+				}
+			}
+		}
+
+		.social-media {
+			position: relative;
+			height: 20%;
+			// border: Thin solid red;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			list-style-type: none;
+
+			&::before {
+				content: '';
+				height: 1px;
+				background: #fff;
+			}
+
+			svg {
+				width: 1.2em;
+				height: 1.2em;
+				margin: 0 1em;
+				fill: #fff;
+				transition: .1s ease-in;
+
+				&::after,
+				&::before {
+					content: '';
+				}
+
+				&:hover {
+					fill: #00e5ff;
+					transform: translateY(-2px);
+				}
+			}
+		}
+	}
+}

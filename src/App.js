@@ -8,18 +8,19 @@ import IntroSection from './components/IntroSection';
 import AboutSection from './components/AboutSection';
 import ExperienceSection from './components/ExperienceSection';
 import ContactSection from './components/ContactSection';
+import AsideMenu from './components/AsideMenu';
 import './App.scss';
 
 function App() {
 	function toggleMenu() {
-		document.querySelector('.hamburger').classList.toggle('active');
+		const hamburger = document.querySelector('.hamburger');
+		// const socialMediaBar = document.querySelector('.social-media-bar');
+		const asideMenu = document.querySelector('.aside-menu');
 
-		document.querySelector('.social-media-bar').classList.toggle('active');
+		hamburger.classList.toggle('active');
+		asideMenu.classList.toggle('active');
 	}
 
-	// window.addEventListener('resize', () => {
-	// 	console.log(window.innerWidth);
-	// });
 	return (
 		<div>
 			<Navbar toggleMenu={toggleMenu} />
@@ -29,6 +30,7 @@ function App() {
 			<ProjectsSection />
 			<ContactSection />
 			<SocialMediaBar />
+			<AsideMenu />
 			{/* <ContactBar /> */}
 		</div>
 	);

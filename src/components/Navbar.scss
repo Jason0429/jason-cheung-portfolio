@@ -130,3 +130,21 @@ nav {
 .nav-link:hover::after {
 	width: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+	nav {
+		.nav-links {
+			// border: thin solid white;
+
+			.nav-link {
+				display: none;
+			}
+
+			.hamburger {
+				display: flex;
+				height: 30px;
+				width: 30px;
+			}
+		}
+	}
+}

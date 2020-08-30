@@ -7,11 +7,9 @@ function ProjectsSection() {
 	// Desc
 	return (
 		<section className="projects-section" id="projects-section">
-			{/* <div className="wrapper"> */}
-			{/* Section Title */}
-			<div className="left">
+			{/* <div className="left">
 				<div className="title">Projects</div>
-				{/* Projects Grid */}
+			
 				<ul className="project-list">
 					{projects.map((project) => (
 						<li className="project">
@@ -28,9 +26,7 @@ function ProjectsSection() {
 						</li>
 					))}
 				</ul>
-			</div>
-			<div className="right">Image of project goes here</div>
-			{/* </div> */}
+			</div> */}
 		</section>
 	);
 }
