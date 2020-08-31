@@ -76,9 +76,13 @@
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 	.intro-section {
 		padding: 0;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.intro-section {
 		.wrapper {
 			height: 100vh;
 			.text-wrapper {

@@ -7,20 +7,20 @@ import IconInstagram from './icons/instagram';
 import IconFacebook from './icons/facebook';
 import IconTwitter from './icons/twitter';
 
-function AsideMenu() {
+function AsideMenu({ toggleMenu }) {
 	return (
 		<div className="aside-menu">
 			<div className="links">
-				<AnchorLink href="#about-section" className="nav-link-aside">
+				<AnchorLink href="#about-section" className="nav-link-aside" onClick={toggleMenu}>
 					About
 				</AnchorLink>
-				<AnchorLink href="#experience-section" className="nav-link-aside">
+				<AnchorLink href="#experience-section" className="nav-link-aside" onClick={toggleMenu}>
 					Experience
 				</AnchorLink>
-				<AnchorLink href="#projects-section" className="nav-link-aside">
+				<AnchorLink href="#projects-section" className="nav-link-aside" onClick={toggleMenu}>
 					Projects
 				</AnchorLink>
-				<AnchorLink href="#contact-section" className="nav-link-aside">
+				<AnchorLink href="#contact-section" className="nav-link-aside" onClick={toggleMenu}>
 					Contact
 				</AnchorLink>
 			</div>

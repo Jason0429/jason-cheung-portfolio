@@ -30,7 +30,7 @@ function App() {
 			<ProjectsSection />
 			<ContactSection />
 			<SocialMediaBar />
-			<AsideMenu />
+			<AsideMenu toggleMenu={toggleMenu} />
 			{/* <ContactBar /> */}
 		</div>
 	);

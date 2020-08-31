@@ -1,48 +1,53 @@
 import { uuid } from 'uuidv4';
 import React from 'react';
-import test from '../img/test.png';
+import List from '../components/icons/list';
+import Oyster from '../components/icons/oyster';
+import Crosshair from '../components/icons/crosshair';
+import Battleship from '../components/icons/battleship';
+import Medicine from '../components/icons/medicine';
+import Music from '../components/icons/music';
 
 const projects = [
 	{
 		title: 'Microsoft To-do Clone',
 		desc: "A web clone of Microsoft's To-Do List application",
-		img: test,
-		link: '',
-		languages: [ 'React.js', 'SCSS', 'jQuery' ]
+		icon: List,
+		github: '',
+		languages: [ 'React.js', 'SCSS' ]
 	},
 	{
-		title: 'Billion Oyster Project - Data Analysis',
+		title: 'Billion Oyster Project',
 		desc: '',
-		img: test,
-		link: '',
-		languages: [ 'Python', 'Google Colab', 'Data Science' ]
+		icon: Oyster,
+		github: '',
+		languages: [ 'Python', 'Numpy', 'Pandas', 'Matplotlib' ]
 	},
 	{
 		title: 'Minecraft Name Sniper',
 		desc: '',
-		img: test,
-		link: '',
+		icon: Crosshair,
+		github: '',
 		languages: [ 'Python', 'Web Scraping' ]
 	},
 	{
-		title: 'Predict Stock Prices',
-		desc: test,
-		img: test,
-		link: '',
-		languages: [ 'Python', 'Artificial Intelligence' ]
+		title: 'Some ML Project',
+		desc: '',
+		icon: Music,
+		github: '',
+		languages: [ 'Python' ]
 	},
 	{
 		title: 'Battleship',
 		desc: '',
-		img: test,
-		link: '',
+		icon: Battleship,
+		github: '',
 		languages: [ 'HTML', 'CSS', 'JavaScript' ]
 	},
 	{
 		title: 'Human Diagnostic Tool',
 		desc: '',
-		img: test,
-		link: '',
+		icon: Medicine,
+		github: '',
 		languages: [ 'HTML', 'CSS', 'JavaScript' ]
 	}
 ];

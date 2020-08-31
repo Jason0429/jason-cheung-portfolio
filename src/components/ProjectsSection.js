@@ -1,32 +1,37 @@
 import React, { useState } from 'react';
 import './ProjectsSection.scss';
 import projects from '../data/projects';
+import IconGitHub from '../components/icons/github';
 
 function ProjectsSection() {
 	// Add Github / External Link (Conditional Rendering)
 	// Desc
 	return (
 		<section className="projects-section" id="projects-section">
-			{/* <div className="left">
+			<div className="wrapper">
 				<div className="title">Projects</div>
-			
-				<ul className="project-list">
+				<div className="projects-list">
 					{projects.map((project) => (
-						<li className="project">
-							<div className="img-overlay" />
-							<img src={project.img} alt="" />
+						<div className="project">
+							<div className="group-row">
+								<div className="row">
+									{project.icon}
+									<a href={project.github} target="_blank" className="github">
+										<IconGitHub />
+									</a>
+								</div>
 
-							<div className="info">
 								<div className="project-title">{project.title}</div>
-								<div className="project-desc">{project.desc}</div>
-								<ul className="languages">
-									{project.languages.map((language) => <li>{language}</li>)}
-								</ul>
 							</div>
-						</li>
+
+							<div className="project-desc">{project.desc}</div>
+							<div className="languages">
+								{project.languages.map((language) => <div className="language">{language}</div>)}
+							</div>
+						</div>
 					))}
-				</ul>
-			</div> */}
+				</div>
+			</div>
 		</section>
 	);
 }
