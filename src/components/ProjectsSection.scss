@@ -8,6 +8,7 @@
 
 		.projects-list {
 			display: grid;
+			justify-items: center;
 			gap: 2em;
 			grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 
@@ -15,7 +16,7 @@
 				cursor: pointer;
 				box-shadow: 0 0 15px 3px #00000030;
 				// Center projects
-				justify-self: center;
+				// justify-self: center;
 
 				// flex alignment
 				display: flex;
