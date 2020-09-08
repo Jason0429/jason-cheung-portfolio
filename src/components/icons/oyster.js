@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Oyster = (
+const Oyster = () => (
 	<svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 511.999 511.999" fill="#00e5ff">
 		<g>
 			<g>

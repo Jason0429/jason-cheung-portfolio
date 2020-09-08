@@ -6,80 +6,107 @@ import Crosshair from '../components/icons/crosshair';
 import Battleship from '../components/icons/battleship';
 import Medicine from '../components/icons/medicine';
 import Music from '../components/icons/music';
+import IconExternal from '../components/icons/external';
+import Heart from '../components/icons/heart';
+import File from '../components/icons/file';
+import ShoppingCart from '../components/icons/shoppingCart';
+import Message from '../components/icons/message';
+import People from '../components/icons/people';
+import Pen from '../components/icons/pen';
+import Move from '../components/icons/move';
 
 const projects = [
 	{
+		title: 'Jaysian',
+		desc:
+			'An informative website and online store to highlight the beauty in Chinese communities, raise money for Asian associations, and reduce stigma during this difficult time.',
+		icon: Heart,
+		link: 'https://jaysian.com',
+		languages: [ 'React.js' ],
+		github: false
+	},
+	{
 		title: 'Amazon Clone',
 		desc:
-			'Amazon clone consisting of a fully functioning payment system using Stripe. Props to: @TheCleverProgrammer',
-		icon: Music,
-		github: '',
-		languages: [ 'React.js', 'Redux', 'Firebase', 'Stripe' ]
+			'Amazon clone consisting of a fully functioning payment system using Stripe. Thanks to: cleverprogrammer.com',
+		icon: <ShoppingCart />,
+		link: 'https://github.com/Jason0429/amazon-clone',
+		languages: [ 'React.js', 'Redux', 'Firebase', 'Stripe' ],
+		github: true
 	},
 	{
 		title: 'WhatsApp Clone',
 		desc:
-			'Basic front-end layout of web WhatsApp combined with real-time messaging updates. Props to: @TheCleverProgrammer',
-		icon: List,
-		github: '',
-		languages: [ 'React.js', 'SCSS', 'Node.js', 'MongoDB', 'Express.js' ]
+			'Basic front-end layout of web WhatsApp combined with real-time messaging updates. Thanks to: cleverprogrammer.com',
+		icon: <Message />,
+		link: 'https://github.com/Jason0429/whatsapp-clone',
+		languages: [ 'React.js', 'SCSS', 'Node.js', 'MongoDB', 'Express.js' ],
+		github: true
 	},
 	{
 		title: 'Microsoft To-do Clone',
 		desc: "A web clone of Microsoft's To-Do List application.",
-		icon: List,
-		github: '',
-		languages: [ 'React.js', 'SCSS' ]
+		icon: <List />,
+		link: 'https://github.com/Jason0429/microsoft-todo-clone',
+		languages: [ 'React.js', 'SCSS' ],
+		github: true
 	},
 	{
 		title: 'Billion Oyster Project',
-		desc: '',
-		icon: Oyster,
-		github: '',
-		languages: [ 'Python', 'Numpy', 'Pandas', 'Matplotlib' ]
+		desc: "Beginner Data Science project analyzing real datasets from New York's Billion Oyster Project.",
+		icon: <Oyster />,
+		link: 'https://github.com/Jason0429/billion-oyster-project',
+		languages: [ 'Python', 'Numpy', 'Pandas', 'Matplotlib' ],
+		github: true
 	},
 	{
 		title: 'DownToDash Website',
-		desc: "Updated appearance to DownToDash's company website.",
-		icon: Oyster,
-		github: '',
-		languages: [ 'Wordpress', 'WPBakery' ]
+		desc:
+			"Updated appearance to DownToDash's company website. Including: Navbar, Header, Team, and Services sections.",
+		icon: <People />,
+		link: 'http://beta.downtodash.com',
+		languages: [ 'Wordpress', 'WPBakery' ],
+		github: false
 	},
 	{
 		title: 'Artful Skin',
 		desc:
 			"High-fidelity prototype for America On Tech's UX Design Bootcamp. Social media app for tattoo artists to connect with others, share their artwork, and promote their business.",
-		icon: Oyster,
-		github: '',
-		languages: [ 'Figma', 'Whimsical', 'inVision' ]
+		icon: <Pen />,
+		link: 'https://invis.io/3QYFQI4VWPM',
+		languages: [ 'Figma', 'Whimsical', 'inVision' ],
+		github: false
 	},
-	{
-		title: 'Minecraft Name Sniper',
-		desc: '',
-		icon: Crosshair,
-		github: '',
-		languages: [ 'Python' ]
-	},
+	// {
+	// 	title: 'Minecraft Name Sniper',
+	// 	desc: '',
+	// 	icon: Crosshair,
+	// 	link: '',
+	// 	languages: [ 'Python' ]
+	// },
 	{
 		title: 'Battleship',
-		desc: '',
-		icon: Battleship,
-		github: '',
-		languages: [ 'HTML', 'CSS', 'JavaScript' ]
+		desc: 'A minimalist black-white game of battleship',
+		icon: <Battleship />,
+		link: '',
+		languages: [ 'HTML', 'CSS', 'JavaScript' ],
+		github: true
 	},
 	{
 		title: 'Human Diagnostic Tool',
-		desc: '',
+		desc: 'Keeps record of health problems in different areas of the body.',
 		icon: Medicine,
-		github: '',
-		languages: [ 'HTML', 'CSS', 'JavaScript' ]
+		link: '',
+		languages: [ 'HTML', 'CSS', 'JavaScript' ],
+		github: true
 	},
 	{
 		title: 'TransitHub',
-		desc: "Final project at America On Tech's TECH360 program.",
-		icon: Medicine,
-		github: '',
-		languages: [ 'HTML', 'CSS', 'JavaScript' ]
+		desc: "Final project at America On Tech's TECH360 program. Sample client website for a transportation company",
+		icon: <Move />,
+		link: '',
+		languages: [ 'HTML', 'CSS', 'Bootstrap' ],
+		github: false
 	}
 ];
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './ProjectsSection.scss';
 import projects from '../data/projects';
 import IconGitHub from '../components/icons/github';
+import IconExternal from '../components/icons/external';
 
 function ProjectsSection() {
 	// Add Github / External Link (Conditional Rendering)
@@ -16,8 +17,8 @@ function ProjectsSection() {
 							<div className="group-row">
 								<div className="row">
 									{project.icon}
-									<a href={project.github} target="_blank" className="github">
-										<IconGitHub />
+									<a href={project.link} target="_blank" className="github">
+										{project.github ? <IconGitHub /> : <IconExternal />}
 									</a>
 								</div>
 

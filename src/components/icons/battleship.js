@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Battleship = (
+const Battleship = () => (
 	<svg
 		id="sea-defence"
 		enable-background="new 0 0 300 300"
