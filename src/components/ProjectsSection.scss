@@ -5,6 +5,17 @@
 		// padding: 3em; // Might want to put this back
 		border-radius: 10px;
 		width: 100%;
+		padding: 3em;
+
+		@media only screen and (max-width: 800px) {
+			padding: 0 0 5em 0;
+		}
+
+		.title {
+			@media only screen and (max-width: 800px) {
+				padding: 2em;
+			}
+		}
 
 		.projects-list {
 			display: grid;
@@ -36,6 +47,10 @@
 
 					& .github svg {
 						display: block !important;
+					}
+
+					& .project-desc {
+						display: block;
 					}
 				}
 
@@ -72,18 +87,20 @@
 
 				.project-desc {
 					font-size: 0.9em;
+					color: #aaa;
+					font-weight: 600;
+					display: none;
 				}
 
 				.languages {
-					display: flex;
+					display: grid;
+					grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+					justify-items: stretch;
 					gap: 10px;
-					align-items: center;
-					justify-content: space-between;
-					width: fit-content;
-					flex-wrap: wrap;
 
 					.language {
 						height: 30px;
+						// margin: 0 10px;
 						width: fit-content;
 						padding: 3px 8px;
 						display: flex;
@@ -92,6 +109,14 @@
 						font-size: 70%;
 						word-wrap: normal;
 						background: #2f3132;
+
+						// &:first-child {
+						// 	margin: 0 10px 0 0;
+						// }
+
+						// &:last-child {
+						// 	margin: 0 0 0 10px;
+						// }
 					}
 				}
 			}
