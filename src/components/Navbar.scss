@@ -19,7 +19,7 @@ nav {
 		border-radius: 50%; */
 		height: 70px;
 		width: 70px;
-		transition: .1s ease-in;
+		transition: 0.1s ease-in;
 
 		&:hover {
 			// border: 1px solid #00e5ff;
@@ -45,7 +45,7 @@ nav {
 			position: relative;
 			color: #ccc;
 			// color: #212121;
-			transition: .1s ease-in;
+			transition: 0.1s ease-in;
 			z-index: 100;
 
 			&:hover {
@@ -58,12 +58,12 @@ nav {
 
 			&::before {
 				counter-increment: link;
-				content: "0" counter(link) ". ";
+				content: '0' counter(link) '. ';
 				font-family: 'Fira Code', monospace;
 				text-align: right;
 				color: #00e5ff80;
 				// color: #6c757d;
-				transition: color .2s ease-in;
+				transition: color 0.2s ease-in;
 			}
 		}
 
@@ -99,7 +99,7 @@ nav {
 				background: #00e5ff;
 				// background: #212121;
 				border-radius: 20px;
-				transition: .2s ease-out;
+				transition: 0.2s ease-out;
 			}
 		}
 	}
@@ -109,7 +109,7 @@ nav {
 		border: 2px solid #00e5ff;
 		padding: 10px;
 
-		transition: .1s ease-in;
+		transition: 0.1s ease-in;
 		&:hover {
 			background: #00e5ff20;
 		}
@@ -124,7 +124,7 @@ nav {
 	bottom: -5px;
 	width: 0%;
 	left: 0;
-	transition: width .2s ease-in;
+	transition: width 0.2s ease-in;
 }
 
 .nav-link:hover::after {
@@ -133,6 +133,17 @@ nav {
 
 @media only screen and (max-width: 768px) {
 	nav {
+		box-shadow: 0px 0px 15px 3px #00000050;
+		height: 60px;
+
+		&.active {
+			box-shadow: none;
+		}
+
+		.logo {
+			transform: scale(0.7);
+		}
+
 		.nav-links {
 			// border: thin solid white;
 

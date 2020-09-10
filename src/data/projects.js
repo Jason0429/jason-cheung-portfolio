@@ -22,7 +22,7 @@ const projects = [
 			'An informative website and online store to highlight the beauty in Chinese communities, raise money for Asian associations, and reduce stigma during this difficult time.',
 		icon: Heart,
 		link: 'https://jaysian.com',
-		languages: [ 'React.js' ],
+		languages: [ 'React.js', 'JQuery' ],
 		github: false
 	},
 	{

@@ -11,7 +11,7 @@
 	align-items: center;
 
 	right: -5vw;
-	transition: .3s ease-out;
+	transition: 0.3s ease-out;
 
 	&::before,
 	&::after {
@@ -44,7 +44,7 @@
 			height: 1.2em;
 			margin: 1em 0em;
 			fill: #fff;
-			transition: .2s ease-in;
+			transition: 0.2s ease-in;
 
 			&:hover {
 				fill: #00e5ff;
@@ -58,11 +58,12 @@
 	.aside-menu {
 		position: fixed;
 		z-index: 99;
-		height: calc(100vh - 100px);
+		height: calc(100vh - 60px);
 		width: 100vw;
 		top: -100vh;
+		box-shadow: 0px 0px 15px 3px #00000020;
 		background: #212121;
-		transition: .3s ease-out;
+		transition: 0.3s ease-out;
 
 		&::before,
 		&::after {
@@ -70,7 +71,8 @@
 		}
 
 		&.active {
-			top: 100px;
+			// top: 100px;
+			top: 60px;
 			right: 0; // Imoprtant to keep it full width
 		}
 
@@ -95,11 +97,11 @@
 
 				&::before {
 					counter-increment: link;
-					content: "0" counter(link) ".";
+					content: '0' counter(link) '.';
 					font-family: 'Fira Code', monospace;
 					text-align: right;
 					color: #00e5ff;
-					transition: color .2s ease-in;
+					transition: color 0.2s ease-in;
 				}
 
 				&:hover {
@@ -129,7 +131,7 @@
 				height: 1.2em;
 				margin: 0 1em;
 				fill: #fff;
-				transition: .1s ease-in;
+				transition: 0.1s ease-in;
 
 				&::after,
 				&::before {

@@ -9,16 +9,18 @@ import AboutSection from './components/AboutSection';
 import ExperienceSection from './components/ExperienceSection';
 import ContactSection from './components/ContactSection';
 import AsideMenu from './components/AsideMenu';
+import $ from 'jquery';
 import './App.scss';
 
 function App() {
 	function toggleMenu() {
-		const hamburger = document.querySelector('.hamburger');
-		// const socialMediaBar = document.querySelector('.social-media-bar');
-		const asideMenu = document.querySelector('.aside-menu');
+		const $hamburger = $('.hamburger');
+		const $navbar = $('nav');
+		const $asideMenu = $('.aside-menu');
 
-		hamburger.classList.toggle('active');
-		asideMenu.classList.toggle('active');
+		$hamburger.toggleClass('active');
+		$asideMenu.toggleClass('active');
+		$navbar.toggleClass('active');
 	}
 
 	return (
